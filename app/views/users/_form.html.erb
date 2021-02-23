@@ -32,30 +32,32 @@
     <%= password_field_tag 'password' %>
 
     <%= submit_tag 'Submit' %>
-<% 
+<%
 =end %>
 
 <%= form_with model: @user do |form| %>
   <br>
-    <% @user.errors.full_messages_for(:username).each do |message| %>
+  <% @user.errors.full_messages_for(:username).each do |message| %>
     <div><%= message %></div>
-    <% end %>
+  <% end %>
   <%= form.label :username, "Whats your username" %>
   <%= form.text_field :username, placeholder: "Your username here" %>
   <br>
-    <% @user.errors.full_messages_for(:email).each do |message| %>
+
+  <% @user.errors.full_messages_for(:email).each do |message| %>
     <div><%= message %></div>
-    <% end %>
+  <% end %>
   <%= form.label :email, "Whats your email" %>
   <%= form.text_field :email, placeholder: "example@email.com" %>
     <% @user.errors.full_messages_for(:password).each do |message| %>
-    <div><%= message %></div>
+      <div><%= message %></div>
     <% end %>
   <br>
+
   <%= form.label :password %>
   <%= form.password_field :password %>
   <br>
- 
+
   <br>
   <%= form.submit %>
 <% end %>
