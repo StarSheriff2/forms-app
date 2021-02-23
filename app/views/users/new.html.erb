@@ -16,9 +16,18 @@
 <%
 =end %>
 
-<%= form_tag(url: "/users", method: "post") %>
+<%= form_tag(users_path)%>
     <%= label_tag 'Username' %>
 
-    <%= text_field_tag 'user[username]' %>
+    <%= text_field_tag 'username' %>
+
+    <%= label_tag 'Email' %>
+
+    <%= email_field_tag 'email' %>
+
+    <%= label_tag 'Password' %>
+
+    <%= password_field_tag 'password' %>
 
     <%= submit_tag 'Submit' %>
+
