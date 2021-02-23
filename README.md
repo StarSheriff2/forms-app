@@ -1,12 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Blog App
+# Bare Metal Forms and Helpers
 
-> In this project we build a simple blog application, using the MVC framework.
+> In this project we build a basic form using Rails.
 # Screenshot
 ![screenshot](./app_screenshot.png)
 
-You can use the CRUD (Create, Read, Update, Delete) operations on each articles and comments section.
+In this simple form, you can perform operations like Create a new user, edit an existing user or show all existing users in the database.
+
+The purpose of the project was help us learn how to build forms using the form helpers built into Rails, like `form_with` and `form_tag`.
 
 ## Built With
 - Ruby version 3.0.0
@@ -14,7 +16,7 @@ You can use the CRUD (Create, Read, Update, Delete) operations on each articles 
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://starsheriff2.github.io/forms-app/)
 
 
 ## Getting Started
@@ -25,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 1. Open your terminal or command prompt.
-2. If you don’t have git installed in your system, skip this step and go to step 3. If you do have git installed in your system, clone this repository to your computer in any directory you want by copying this text into your command prompt/terminal: `git clone https://github.com/StarSheriff2/blog_app.git`  .
+2. If you don’t have git installed in your system, skip this step and go to step 3. If you do have git installed in your system, clone this repository to your computer in any directory you want by copying this text into your command prompt/terminal: `git clone https://github.com/StarSheriff2/forms-app.git`  .
 <br>Now go to "Install" section
 3. If you don’t have git installed in your system, you can download the program files. To do this, click on the green button that says “**Code**“, on the upper right side of the project frame.
 4. You will see a dropdown menu. Click on “**Download ZIP**“.
@@ -38,7 +40,8 @@ To get a local copy up and running follow these simple example steps.
 4. Now type <code>bin/rails db:migrate</code> to migrate the database.
 ### Usage
 1. Run <code>bin/rails server</code>
-2. Open http://localhost:3000/ on your favorite web browser and create a new user or edit it,
+2. Open http://localhost:3000/ on your favorite web browser and create a new user
+3. You can also edit existing users
 
 ## Authors
 
@@ -72,5 +75,5 @@ https://guides.rubyonrails.org/
 https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms
 ## 📝 License
 
-This project is [MIT]() licensed.
+This project is [MIT](https://github.com/StarSheriff2/forms-app/blob/form-feature/LICENSE) licensed.
 
