@@ -2,7 +2,7 @@
 
 # Bare Metal Forms and Helpers
 
-> In this project we build a basic form using Rails.
+> In this project we built a basic form using Rails.
 # Screenshot
 ![screenshot](./app_screenshot.png)
 
