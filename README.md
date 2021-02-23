@@ -1,26 +1,76 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> In this project we build a simple blog application, using the MVC framework.
+# Screenshot
+![screenshot](./app_screenshot.png)
 
-Things you may want to cover:
+You can use the CRUD (Create, Read, Update, Delete) operations on each articles and comments section.
 
-* Ruby version
+## Built With
+- Ruby version 3.0.0
+- Ruby on Rails 6.1.1
 
-* System dependencies
+## Live Demo
 
-* Configuration
+[Live Demo Link](https://livedemo.com)
 
-* Database creation
 
-* Database initialization
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+### Prerequisites
+- Linux/Mac Operating systems
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
+1. Open your terminal or command prompt.
+2. If you don’t have git installed in your system, skip this step and go to step 3. If you do have git installed in your system, clone this repository to your computer in any directory you want by copying this text into your command prompt/terminal: `git clone https://github.com/StarSheriff2/blog_app.git`  .
+<br>Now go to "Install" section
+3. If you don’t have git installed in your system, you can download the program files. To do this, click on the green button that says “**Code**“, on the upper right side of the project frame.
+4. You will see a dropdown menu. Click on “**Download ZIP**“.
+5. Go to the directory where you downloaded the **ZIP file** and open it. Extract its contents to any directory you want in your system.
 
-* Deployment instructions
+### Install
+1. If you are not in your system terminal/command prompt already, please open it and go to the directory where you cloned the remote repository or extracted the project files.
+2. While in the root directory, type `bundle install`. This will install all the necessary gems in your system.
+3. Then you can type <code>yarn install --check-files</code>.
+4. Now type <code>bin/rails db:migrate</code> to migrate the database.
+### Usage
+1. Run <code>bin/rails server</code>
+2. Open http://localhost:3000/ on your favorite web browser and create a new user or edit it,
 
-* ...
+## Authors
+
+👤 **Arturo Alvarez**
+
+- GitHub: [@StarSheriff2](https://github.com/StarSheriff2)
+- Twitter: [@ArturoAlvarezV ](https://twitter.com/ArturoAlvarezV )
+- LinkedIn: [Arturo Alvarez](https://www.linkedin.com/in/arturoalvarezv/)
+
+👤 **Carlos Ospina**
+
+- GitHub: [@carloso0114](https://github.com/carloso0114)
+- LinkedIn: [Carlos Ospina](https://www.linkedin.com/in/carlosospina/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/StarSheriff2/forms-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Project based on RoR official docs <br>
+https://guides.rubyonrails.org/
+
+- The Odin Project <br>
+https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms
+## 📝 License
+
+This project is [MIT]() licensed.
+
