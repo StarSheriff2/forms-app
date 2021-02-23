@@ -19,6 +19,6 @@
 <%= form_tag(url: "/users", method: "post") %>
     <%= label_tag 'Username' %>
 
-    <%= text_field_tag 'user' %>
+    <%= text_field_tag 'user[username]' %>
 
     <%= submit_tag 'Submit' %>
