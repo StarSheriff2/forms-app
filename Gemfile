@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # gem Rubocop to check your Ruby files for style errors
-gem 'rubocop', '~>0.81.0'
+gem 'rubocop', '~>1.9.1'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
