@@ -1,0 +1,63 @@
+<%
+=begin %>
+<form action="/users" accept-charset="UTF-8" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label >Username:</label>
+    <input type="text" name="user[username]"><br><br>
+
+    <label >Email:</label>
+    <input type="text" name="user[email]"><br><br>
+
+    <label >Password:</label>
+    <input type="password" name="user[password]"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<%
+=end %>
+
+<%
+=begin%>
+<%= form_tag(users_path)%>
+    <%= label_tag 'Username' %>
+
+    <%= text_field_tag 'username' %>
+
+    <%= label_tag 'Email' %>
+
+    <%= email_field_tag 'email' %>
+
+    <%= label_tag 'Password' %>
+
+    <%= password_field_tag 'password' %>
+
+    <%= submit_tag 'Submit' %>
+<%
+=end %>
+
+<%= form_with model: @user do |form| %>
+  <br>
+  <% @user.errors.full_messages_for(:username).each do |message| %>
+    <div><%= message %></div>
+  <% end %>
+  <%= form.label :username, "Whats your username" %>
+  <%= form.text_field :username, placeholder: "Your username here" %>
+  <br>
+
+  <% @user.errors.full_messages_for(:email).each do |message| %>
+    <div><%= message %></div>
+  <% end %>
+  <%= form.label :email, "Whats your email" %>
+  <%= form.text_field :email, placeholder: "example@email.com" %>
+    <% @user.errors.full_messages_for(:password).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  <br>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+  <br>
+
+  <br>
+  <%= form.submit %>
+<% end %>
