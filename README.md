@@ -14,11 +14,6 @@ The purpose of the project was help us learn how to build forms using the form h
 - Ruby version 3.0.0
 - Ruby on Rails 6.1.1
 
-## Live Demo
-
-[Live Demo Link](https://starsheriff2.github.io/forms-app/)
-
-
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
